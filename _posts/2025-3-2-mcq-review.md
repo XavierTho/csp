@@ -1,60 +1,87 @@
 ---
 layout: post
-title: MCQ (2) Review
-toc: true
+title: MCQ (2) Review - Performance Dashboard
+toc: false
 comments: true
 ---
 
 <style>
+    /* Base Styles */
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         padding: 20px;
-        background-color: #f9f9f9;
+        background-color: #1e1e2f;
+        color: #dcdcdc;
+        transition: background-color 0.5s, color 0.5s;
     }
+    h2, h3, p {
+        text-align: center;
+        margin: 10px 0;
+        color: #dcdcdc;
+    }
+    
+    /* Table Styles */
     table {
-        width: 100%;
+        width: 80%;
+        margin: 20px auto;
         border-collapse: collapse;
-        margin-top: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        background-color: #2b2b3d;
+        border-radius: 10px;
         overflow: hidden;
-        margin-left: auto; /* Center the table */
-        margin-right: auto; /* Center the table */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
     th, td {
-        padding: 16px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        border-bottom: 1px solid #3a3a50;
+        font-size: 18px;
+        color: #dcdcdc;
+        text-align: center;
+        vertical-align: middle;
         transition: background-color 0.3s;
-        font-size: 18px; /* Increased font size */
-        font-weight: bold; /* Increased font weight */
+        position: relative;
     }
     th {
-        background-color: #4caf50;
-        color: white;
-        font-weight: bold;
+        background-color: #3a3a50;
+        font-weight: normal;
     }
     tr:hover {
-        background-color: #e0f7fa;
+        background-color: #2e2e44;
         cursor: pointer;
         transition: 0.3s;
     }
-    .bar-container {
-        width: 100%;
-        background-color: #e0e0e0;
-        border-radius: 8px;
-        overflow: hidden;
-        height: 24px;
-        margin: 5px 0;
+    
+    /* Circular Progress Styles */
+    .progress-container {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
     }
-    .bar {
-        height: 24px;
-        border-radius: 8px;
-        transition: width 0.5s;
+    .progress-circle {
+        stroke: #007acc;
+        stroke-width: 8;
+        fill: transparent;
+        stroke-linecap: round;
+        animation: progress-animation 1.5s ease-out forwards;
     }
-    .gray-bar { background-color: #888; }
-    .green-bar { background-color: #66bb6a; }
-    .yellow-bar { background-color: #ffca28; }
+    .progress-bg {
+        stroke: #3a3a50;
+        stroke-width: 8;
+        fill: transparent;
+    }
+    .progress-text {
+        fill: #dcdcdc;
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+    @keyframes progress-animation {
+        from { stroke-dasharray: 0 100; }
+        to { stroke-dasharray: var(--progress) 100; }
+    }
+    
+    /* Modal Styles */
     .modal {
         display: none;
         position: fixed;
@@ -64,64 +91,118 @@ comments: true
         width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.7);
         padding-top: 60px;
     }
     .modal-content {
-        background-color: white;
+        background-color: #2b2b3d;
         margin: 5% auto;
         padding: 30px;
         border-radius: 10px;
         width: 80%;
         max-width: 600px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        color: #dcdcdc;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     }
     .close {
-        color: #333;
+        color: #dcdcdc;
         float: right;
         font-size: 28px;
         font-weight: bold;
-    }
-    .close:hover, .close:focus {
-        color: #000;
-        text-decoration: none;
         cursor: pointer;
     }
-    h2 {
-        color: #333;
-        margin-top: 0;
+    .close:hover {
+        color: #007acc;
     }
-    p {
-        color: #555;
+    
+    /* Tooltip Styles */
+    .tooltip {
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 14px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.2s, visibility 0.2s;
+        pointer-events: none;
+        z-index: 10;
+    }
+    td:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    /* Progress Indicator */
+    .overall-progress-container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #3a3a50;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+    }
+    .overall-progress-bar {
+        height: 24px;
+        background-color: #007acc;
+        width: 0;
+        transition: width 1s;
+    }
+    .progress-label {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
     }
 </style>
 
-<h2 style="text-align:center;">Performance Table</h2>
+<h2>📊 MCQ (2) Performance Dashboard 📊</h2>
+
+<!-- Overall Progress Bar with Explicit Score -->
+<div class="overall-progress-container" title="Overall Performance: 56/67 (83.6%)">
+    <div class="overall-progress-bar" style="width: 83.6%;"></div>
+    <div class="progress-label">56/67 (83.6%)</div>
+</div>
+
 <table>
     <tr>
-        <th>Topic</th>
-        <th>Number of Questions</th>
-        <th>Average Performance %</th>
+        <th>🧠 Topic</th>
+        <th>📋 Number of Questions</th>
+        <th>📈 Performance</th>
     </tr>
+    
     <tr onclick="showModal('Variables and Assignments')">
         <td>Variables and Assignments</td>
         <td>1</td>
-        <td><div class='bar-container'><div class='bar yellow-bar' style='width: 0%'>0%</div></div></td>
+        <td>0%</td>
     </tr>
+    
     <tr onclick="showModal('Algorithmic Efficiency')">
         <td>Algorithmic Efficiency</td>
         <td>2</td>
-        <td><div class='bar-container'><div class='bar yellow-bar' style='width: 0%'>0%</div></div></td>
+        <td>0%</td>
     </tr>
+    
     <tr onclick="showModal('Nested Conditionals')">
         <td>Nested Conditionals</td>
         <td>2</td>
-        <td><div class='bar-container'><div class='bar green-bar' style='width: 50%'>50%</div></div></td>
+        <td>50%</td>
     </tr>
+    
     <tr onclick="showModal('Iteration')">
         <td>Iteration</td>
         <td>5</td>
-        <td><div class='bar-container'><div class='bar green-bar' style='width: 60%'>60%</div></div></td>
+        <td>60%</td>
     </tr>
 </table>
 
@@ -129,28 +210,25 @@ comments: true
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h2 id="modalTitle">Topic Details</h2>
-        <p id="modalContent">Here you can display specific questions and answers for the selected topic.</p>
+        <p id="modalContent">Details will appear here.</p>
     </div>
 </div>
 
 <script>
     function showModal(topic) {
-        document.getElementById('modalTitle').innerText = topic;
-        if (topic === 'Iteration') {
-            document.getElementById('modalContent').innerHTML = "<p><strong>Question:</strong> Algorithm to move robot to goal</p><p><strong>Error:</strong> Incorrectly moves the robot off the grid.</p><p><strong>Correct Answer:</strong> The correct answer was Option C, as it used the correct movement pattern to navigate the robot to the gray square without exceeding boundaries.</p><p><strong>Concepts Involved:</strong> Iteration and conditional statements to control a loop until a goal is reached.</p><p><strong>Tip:</strong> Always visualize the steps of a loop in grid-based problems to avoid boundary errors.</p>";
-        } else {
-            document.getElementById('modalContent').innerText = "Questions and details will be displayed here for " + topic;
-        }
+        document.getElementById('modalTitle').innerText = topic + " - Performance Analysis";
+        document.getElementById('modalContent').innerHTML = `
+            <p><strong>Opportunities for Improvement:</strong></p>
+            <ul>
+                <li>Review the fundamentals of ${topic}.</li>
+                <li>Engage in targeted practice exercises.</li>
+                <li>Apply knowledge through real-world scenarios.</li>
+            </ul>
+        `;
         document.getElementById('modal').style.display = 'block';
     }
 
     function closeModal() {
         document.getElementById('modal').style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-        if (event.target == document.getElementById('modal')) {
-            closeModal();
-        }
     }
 </script>
