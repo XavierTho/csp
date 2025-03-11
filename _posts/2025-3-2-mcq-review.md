@@ -232,3 +232,5 @@ comments: true
         document.getElementById('modal').style.display = 'none';
     }
 </script>
+
+<img src="{{site.baseurl}}/images/tri-two-final-blog/example-question.png">
