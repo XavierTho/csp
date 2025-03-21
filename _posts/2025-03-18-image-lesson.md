@@ -2,6 +2,7 @@
 layout: post
 title: Color Codes, Images, Base64 Blog
 toc: True
+permalink: /image-lesson
 comments: True
 ---
 
