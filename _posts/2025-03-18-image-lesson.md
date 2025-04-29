@@ -187,4 +187,4 @@ You can **overlay** a semi-transparent color on a Base64 image using CSS:
 
 ---
 
-*You’re all set to present—even with zero prior experience! Follow the bullets, use the notes, and let the exercises guide your audience.*
+
