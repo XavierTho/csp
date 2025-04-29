@@ -159,18 +159,7 @@ You can **overlay** a semi-transparent color on a Base64 image using CSS:
 
 ## 5. AP CSP Practice Questions
 
-1. **Pixel & Color Depth**
-   - Image: 100×100 pixels, 24-bit color.
-   - Q: How many possible colors per pixel?
-   - Q: Total bits (uncompressed)?
-2. **Hex → Decimal RGB**
-   - Convert `#3B7DDD` into `(R, G, B)`.
-3. **Binary Representation**
-   - Write 24-bit binary of pure green `rgb(0,255,0)`.
-4. **Grayscale Storage**
-   - 256×256 grayscale, 8 bits/pixel → size in bytes?
-5. **Base64 Overhead**
-   - A 4 KB PNG → ~ how many KB when Base64-encoded?
+<img src="{{site.baseurl}}/images/example-image-question.png">
 
 ### Presenter Notes
 - Provide formula sheets for quick reference.
