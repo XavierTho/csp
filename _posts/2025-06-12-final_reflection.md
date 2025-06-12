@@ -169,12 +169,12 @@ Code, above all, is not a means of communication between us and computers, but r
     <!--Image-->
     <div class="image">
       <a href="https://en.wikipedia.org/wiki/Question_mark" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/question_mark.jpg">
+        <img src="{{site.baseurl}}/images/Portfolio/next-steps.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">???</p>
+          <p class="project-name">Next Steps</p>
         </div>
   </div>
 
