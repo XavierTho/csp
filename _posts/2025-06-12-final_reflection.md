@@ -56,13 +56,13 @@ Code, above all, is not a means of communication between us and computers, but r
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//2023/08/24/tech-journey.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/cyberaegis.jpg">
+      <a href="{{site.baseurl}}//2024/09/25/strings_lesson_IPYNB_2_.html" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/String_example.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">First Blog</p>
+          <p class="project-name">Strings in Python</p>
         </div>
   </div>
 
