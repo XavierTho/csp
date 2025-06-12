@@ -136,77 +136,35 @@ Code, above all, is not a means of communication between us and computers, but r
         </div>
   </div>
 
-  <!--Container 7 (GAME) -->
+  <!--Container 7 (Project Bitshift) -->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="https://justinq-dnhs.github.io/Game/" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/game.png">
+      <a href="https://frogpants.github.io/Project-Bitshift/" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/bitshift.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Game</p>
+          <p class="project-name">Project Bitshift</p>
         </div>
   </div>
 
-  <!--Container 8 (LOCAL STORAGE) -->
+  <!--Container 8 (LinkedIn) -->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//blog/local-storage" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/localstorage.jpg">
+      <a href="https://www.linkedin.com/in/xavier-thompson-1978892b7/" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/linkedin.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Local Storage</p>
+          <p class="project-name">LinkedIn</p>
         </div>
   </div>
 
-  <!--Container 9 (COLLISIONS) -->
-  <div class="container">
-    <!--Image-->
-    <div class="image">
-      <a href="{{site.baseurl}}//2023/10/27/Collisions_IPYNB_2_.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/collision.png">
-      </a>
-    </div>
-        <!--Project Information-->
-        <div class="project-information">
-          <p class="project-name">Collisions</p>
-        </div>
-  </div>
-
-  <!--Container 10 (RANDOMIZATION) -->
-  <div class="container">
-    <!--Image-->
-    <div class="image">
-      <a href="{{site.baseurl}}//2023/10/11/Randomization_IPYNB_2_.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/coin-flip.jpg">
-      </a>
-    </div>
-        <!--Project Information-->
-        <div class="project-information">
-          <p class="project-name">Randomization</p>
-        </div>
-  </div>
-
-  <!--Container 11 (GOOMBAS) -->
-  <div class="container">
-    <!--Image-->
-    <div class="image">
-      <a href="https://nighthawkcoders.github.io/game_levels_mp/2024/01/08/CSSE-oop-game-levels2.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/Goomba.PNG">
-      </a>
-    </div>
-        <!--Project Information-->
-        <div class="project-information">
-          <p class="project-name">GOOMBAS</p>
-        </div>
-  </div>
-
-  <!--Container 12 (???) -->
+  <!--Container 9 (???) -->
   <div class="container">
     <!--Image-->
     <div class="image">
