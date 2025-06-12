@@ -52,7 +52,7 @@ Code, above all, is not a means of communication between us and computers, but r
 
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin-bottom: 30px; column-gap: 20px; row-gap: 40px;">
 
-  <!--Container 1 (FIRST BLOG)-->
+  <!--Container 1 (Strings)-->
   <div class="container">
     <!--Image-->
     <div class="image">
@@ -66,45 +66,45 @@ Code, above all, is not a means of communication between us and computers, but r
         </div>
   </div>
 
-  <!--Container 2 (CSS MAGIC)-->
+  <!--Container 2 (Chess)-->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//2023/08/26/css-magic_IPYNB_2_.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/css-magic.jpg">
+      <a href="{{site.baseurl}}//2024/11/20/Sprint3-Review_IPYNB_2_.html" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/ChessSet.jpg">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">CSS Magic</p>
+          <p class="project-name">Chess</p>
         </div>
   </div>
 
-  <!--Container 3 (SNAKE) -->
+  <!--Container 3 (Gradelog) -->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//2023/08/31/Snake.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/snake.jpg">
+      <a href="{{site.baseurl}}//2025/01/24/gradelog-blog_IPYNB_2_.html" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/gradelog.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Snake</p>
+          <p class="project-name">GradeLog</p>
         </div>
   </div>
 
-  <!--Container 4 (CONWAY GAME OF LIFE) -->
+  <!--Container 4 (Deployment) -->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//2023/08/31/Game_Of_Life.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/conway.gif">
+      <a href="https://xaviertho.github.io/cantella_frontend/aws-deployment-blog" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/deployment.jpg">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Game of Life</p>
+          <p class="project-name">Deployment/p>
         </div>
   </div>
 
