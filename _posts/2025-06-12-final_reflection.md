@@ -122,17 +122,17 @@ Code, above all, is not a means of communication between us and computers, but r
         </div>
   </div>
 
-  <!--Container 6 (CALCULATOR) -->
+  <!--Container 6 (Cantella) -->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//2023/09/14/Calculator2.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/calculator.jpg">
+      <a href="https://xaviertho.github.io/cantella_frontend/" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/cantella.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Calculator</p>
+          <p class="project-name">Cantella</p>
         </div>
   </div>
 
