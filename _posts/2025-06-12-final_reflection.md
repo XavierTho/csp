@@ -104,21 +104,21 @@ Code, above all, is not a means of communication between us and computers, but r
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Deployment/p>
+          <p class="project-name">Deployment</p>
         </div>
   </div>
 
-  <!--Container 5 (TRANSLATOR) -->
+  <!--Container 5 (Color Codes) -->
   <div class="container">
     <!--Image-->
     <div class="image">
-      <a href="{{site.baseurl}}//2023/09/06/translator-magic_IPYNB_2_.html" target="_blank">
-        <img src="{{site.baseurl}}/images/Portfolio/translator.png">
+      <a href="https://xaviertho.github.io/csp/image-lesson" target="_blank">
+        <img src="{{site.baseurl}}/images/Portfolio/rgb.png">
       </a>
     </div>
         <!--Project Information-->
         <div class="project-information">
-          <p class="project-name">Translator</p>
+          <p class="project-name">Color Codes</p>
         </div>
   </div>
 
